@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gizli Sayaç</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    #content {
+      display: none;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    #content h1 {
+      font-size: 3rem;
+      color: gold;
+    }
+    #content p {
+      font-size: 1.5rem;
+      color: lightgreen;
+    }
+    #content img {
+      max-width: 300px;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #fff;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="content">
+  <h1>Hello creimesths 👋</h1>
+  <p>Yeni yılınız kutlu olsun! 🎉🎆</p>
+  <img src="https://via.placeholder.com/300x200.png?text=Happy+New+Year" alt="New Year Image">
+</div>
+
+<script>
+  // Sayfa yüklendiğinde 10 saniye sonra içeriği göster
+  window.onload = function () {
+    setTimeout(function () {
+      document.getElementById("content").style.display = "block";
+    }, 10000); // 10 saniye sonra içerik göster
+  }
+</script>
+
+</body>
+</html>
